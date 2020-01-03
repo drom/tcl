@@ -7,11 +7,14 @@ puts "hello $sum"
 ```
 
 ```js
+let {puts, expr} = require('tcl');
+let x, op, sum;
+
 // comment
-let x = 2;
-let op = '*';
-let sum = $.expr(x() + op() + x());
-$.puts("hello ", sum);
+x = 2;
+op = '*';
+sum = expr(x + op + x);
+puts('hello ', sum);
 ```
 
 ----
@@ -27,12 +30,15 @@ if {$age < 20} {
 ```
 
 ```js
-let age = 10;
+let {puts} = require('tcl');
+let age;
+
+age = 10;
 
 if (age < 20) {
-  $.puts('Age is less than 20');
+  puts('Age is less than 20');
 } else {
-  $.puts('Age is greater than 20');
+  puts('Age is greater than 20');
 }
 ```
 
@@ -48,11 +54,14 @@ if {1 in $a} {
 ```
 
 ```js
-let a = '1 2 3';
+let {puts, inOp} = require('tcl');
+let a;
 
-if ($.in(1, a)) {
-  $.puts('ok');
+a = '1 2 3';
+
+if (inOp(1, a)) {
+  puts('ok');
 } else {
-  $.puts('fail');
+  puts('fail');
 }
 ```
