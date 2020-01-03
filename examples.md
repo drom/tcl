@@ -2,7 +2,7 @@
 # comment
 set x 2
 set op *;
-set sum [expr {$x$op$x}]
+set sum [expr $x$op$x]
 puts "hello $sum"
 ```
 
