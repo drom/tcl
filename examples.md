@@ -44,7 +44,8 @@ if {1 in $a} {
   puts "ok"
 } else {
   puts "fail"
-}```
+}
+```
 
 ```js
 let a = '1 2 3';
