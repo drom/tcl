@@ -30,9 +30,9 @@ if {$age < 20} {
 let age = 10;
 
 if (age < 20) {
-  $.puts('Age is less than 20')
+  $.puts('Age is less than 20');
 } else {
-  $.puts('Age is greater than 20')
+  $.puts('Age is greater than 20');
 }
 ```
 
