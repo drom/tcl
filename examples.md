@@ -11,7 +11,7 @@ puts "hello $sum"
 let x = 2;
 let op = '*';
 let sum = expr(x() + op() + x());
-puts("hello " + sum);
+puts("hello ", sum);
 ```
 
 ----
@@ -49,7 +49,7 @@ if {1 in $a} {
 ```js
 let a = '1 2 3';
 
-if(_in(1, a)) {
+if(if_in(1, a)) {
   puts('ok');
 } else {
   puts('fail');
