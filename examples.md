@@ -10,8 +10,8 @@ puts "hello $sum"
 // comment
 let x = 2;
 let op = '*';
-let sum = expr(x() + op() + x());
-puts("hello ", sum);
+let sum = $.expr(x() + op() + x());
+$.puts("hello ", sum);
 ```
 
 ----
@@ -30,9 +30,9 @@ if {$age < 20} {
 let age = 10;
 
 if (age < 20) {
-  puts('Age is less than 20')
+  $.puts('Age is less than 20')
 } else {
-  puts('Age is greater than 20')
+  $.puts('Age is greater than 20')
 }
 ```
 
@@ -49,9 +49,9 @@ if {1 in $a} {
 ```js
 let a = '1 2 3';
 
-if(op_in(1, a)) {
-  puts('ok');
+if($.in(1, a)) {
+  $.puts('ok');
 } else {
-  puts('fail');
+  $.puts('fail');
 }
 ```
