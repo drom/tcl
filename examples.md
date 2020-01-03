@@ -49,7 +49,7 @@ if {1 in $a} {
 ```js
 let a = '1 2 3';
 
-if(if_in(1, a)) {
+if(op_in(1, a)) {
   puts('ok');
 } else {
   puts('fail');
