@@ -50,7 +50,7 @@ if {1 in $a} {
 ```js
 let a = '1 2 3';
 
-if($.in(1, a)) {
+if ($.in(1, a)) {
   $.puts('ok');
 } else {
   $.puts('fail');
